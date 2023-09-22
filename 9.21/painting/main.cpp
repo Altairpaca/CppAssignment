@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string_view>
 #include <algorithm>
-#include <ranges>
 using namespace std;
 
 constexpr size_t maxn{40};
@@ -38,7 +37,7 @@ int main()
                 board[i][b - 1] = c;
     }
 
-    for (auto const &line : board | views::take(n))
-        cout << string_view(line | views::take(m)) << endl;
+    for (int i{0}; i < n; ++i)
+        cout << string_view(board[i], board[i] + m) << endl;
     return 0;
 }
