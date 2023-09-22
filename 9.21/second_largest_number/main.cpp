@@ -10,6 +10,7 @@ int main()
     int N;
     uint32_t nums[3]{};
 
+    cin >> N;
     while (N--)
     {
         cin >> nums[0];
