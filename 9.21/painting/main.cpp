@@ -37,7 +37,9 @@ int main()
                 board[i][b - 1] = c;
     }
 
-    for (int i{0}; i < n; ++i)
-        cout << string_view(board[i], board[i] + m) << endl;
+    for (int i{0}; i < n; ++i, cout << endl)
+        for (int j{0}; j < m; ++j)
+            cout << board[i][j];
+
     return 0;
 }
