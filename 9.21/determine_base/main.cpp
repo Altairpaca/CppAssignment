@@ -1,5 +1,4 @@
 #include <iostream>
-#include <ranges>
 #include <cstdlib>
 using namespace std;
 
